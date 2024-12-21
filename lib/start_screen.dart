@@ -25,18 +25,21 @@ class _FirstScreenState extends State<FirstScreen> {
           Image.asset(
             "assets/images/quiz-logo.png",
             width: 160,
+            color: const Color.fromARGB(192, 117, 60, 128),
           ),
           const Text(
             "Learn Flutter With Fun way",
             style: TextStyle(color: Colors.white),
           ),
-          OutlinedButton(
-              onPressed: () {},
-              style: OutlinedButton.styleFrom(backgroundColor: Colors.white),
-              child: const Text(
-                "Start Quiz",
-                style: TextStyle(color: Colors.black, fontSize: 24),
-              ))
+          OutlinedButton.icon(
+            onPressed: () {},
+            style: OutlinedButton.styleFrom(backgroundColor: Colors.white),
+            label: const Text(
+              "Start Quiz",
+              style: TextStyle(color: Colors.black, fontSize: 20),
+            ),
+            icon: Icon(Icons.arrow_right_alt),
+          )
         ],
       ),
     );
